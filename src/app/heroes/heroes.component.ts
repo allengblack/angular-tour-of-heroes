@@ -19,11 +19,6 @@ export class HeroesComponent implements OnInit {
         this.getHeroes();
     }
 
-    //hero: Hero = {
-    //    id: 1,
-    //    name: "Allengblack"
-    //}
-
     onSelect(hero: Hero): void {
         this.selectedHero = hero;
     }
@@ -32,6 +27,5 @@ export class HeroesComponent implements OnInit {
         this.heroService.getHeroes()
             .subscribe(heroes => this.heroes = heroes);
     }
-
-    
+        
 }
